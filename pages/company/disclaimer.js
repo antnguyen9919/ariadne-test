@@ -38,8 +38,8 @@ const disclaimer = () => {
       <b>Information in accordance with Section 5 TMG</b><br/>
 
       <b>Ariadne Maps GmbH</b><br/>
-     <b> Boltzmannstrasse 3</b><br/>
-     <b> 85748 Munich</b><br/>
+     <b> Brecherspitzstr. 8</b><br/>
+     <b> 81541 Munich</b><br/>
 
      <b>Represented by: </b><br/>
      <b>Georgios Pipelidis</b><br/>
@@ -48,8 +48,7 @@ const disclaimer = () => {
 
 
      <b> Contact Information:</b><br/>
-     <b> Telephone: +49 (0)89 289 17886</b><br/>
-     <b> Fax: +49 (0) 89 289 17307</b><br/>
+     <b> Telephone: +49 174 4079675</b><br/>
      <b> E-Mail: contact@ariadnemaps.com</b><br/>
      <b> Internet address: https://ariadnemaps.com</b><br/>
 
