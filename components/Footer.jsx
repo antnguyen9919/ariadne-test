@@ -39,7 +39,7 @@ function Footer() {
       <Link href='/solutions/ariadne-navigation'>Ariadne Navigation</Link>
       <Link href='/solutions/ariadne-analytics'>Ariadne Analytics</Link>
       <Link href='/solutions/ariadne-engagement'>Ariadne Engagement</Link>
-      <Link href='/solutions/industries'>Industries</Link>
+      <Link href='/solutions/ariadne-analytics'>Industries</Link>
       <Link href='/solutions/data-lifecycle'>Data Lifecycle</Link>
 
       
