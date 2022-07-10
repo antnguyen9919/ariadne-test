@@ -203,7 +203,7 @@ export default function Home() {
 
             <div className={`${styles.heroScreen}`} >
             <video className={styles.bgVid} 
-            poster = "/Photos/screenload.png"
+            poster = "/Photos/screenload.jpg"
             initial="hidden" animate="enter" exit="exit" variants={Vvariants} transition={{duration: 2, type: 'easeInOut'}} 
             
             src ="/Videos/herosection.mp4" 
