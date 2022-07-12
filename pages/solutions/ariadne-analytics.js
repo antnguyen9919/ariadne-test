@@ -4,6 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {motion} from 'framer-motion'
 import styles from '../../styles/Solutions.module.css'
+import CheckIcon from '@mui/icons-material/Check';
+
 
 const variants = {
   hidden:{opacity: 0, x:200, y:0},
@@ -62,7 +64,16 @@ const AriadneAnalytics = () => {
       <div className={`${styles.gifbox}  bg-gradient-to-b from-[#ffffff] via-[#ffffff] to-[#f9f9f9]  ` } >
             <div className = {styles.giftext}>
               
-              <p>Ariadne Analytics is the heart of the Ariadne Platform, and it can be used for people counting, determine retail conversion rates , reduce dwell timesand other useful customer success metrics. We place a high importance on privacy and employ anonymous tracking systems.</p>
+              <p>Ariadne Analytics provides essential KPIs such as:</p>
+
+              <span><CheckIcon /></span>&nbsp; &nbsp; &nbsp;The number of people that passed by your store<br/>
+              <span><CheckIcon /></span>&nbsp; &nbsp; &nbsp;The number of people that entered your store<br/>
+              <span><CheckIcon /></span>&nbsp; &nbsp; &nbsp;The average time that people spend in your store<br/>
+              <span><CheckIcon /></span>&nbsp; &nbsp; &nbsp;The popular transitions inside your store<br/>
+            
+            
+            
+            
             </div>
             <div className = {styles.gif}>
             <video  playsInline className='pointer-events-none' width="100%" src="/Videos/h1.mp4" autoPlay loop muted type = "videos/mp4"/>
@@ -73,9 +84,7 @@ const AriadneAnalytics = () => {
           <h1>
           Real-Time Analytics
           </h1>
-          <p>
-          When do your consumers prefer to shop during the day, and how many people are now in your store and where are they located? We provide answer to those questions with our intuitive dashboard.
-          </p>
+          <p>When do your consumers prefer to shop during the day, how many people are at any time in your store and which areas are they visiting?</p>
           <div className={styles.trioContainer} >
             <div className={styles.singleSnap}>
               <img className = "hover:scale-105 transition ease-in-out  " src="/Photos/Pages/Analytics/Total.png" alt="st" />
@@ -96,7 +105,7 @@ const AriadneAnalytics = () => {
       </div>
       <div className={styles.sectionA2}>
         <h1>Basic Analytics</h1>
-          <p>Recognize the most visited areas of your establishment and tailor your services there to improve your customer&rsquo;s experience. </p>
+          <p>Recognize the most visited areas of your store and tailor your services there to improve your customer&rsquo;s experience.</p>
           <div className={styles.trioContainer} >
             <div className={styles.singleSnap}>
               <img className = "hover:scale-105 transition ease-in-out  " src="/Photos/Pages/Analytics/BasicAnalytics/h1a.png" alt="st" />
@@ -110,7 +119,7 @@ const AriadneAnalytics = () => {
           </div>
            
 
-          <p>Understand what interests your customers, and how much time do they spend to each section in your premises? Take advantage of and cater to your customers&rsquo; needs.</p>
+          <p>Understand what is interesting for your customers. Discover how much time your customers spend to each area in your store.</p>
           <div className={styles.trioContainer} >
             <div className={styles.singleSnap}>
               <img className = "hover:scale-105 transition ease-in-out  " src="/Photos/Pages/Analytics/BasicAnalytics/h4.png" alt="st" />
@@ -122,7 +131,7 @@ const AriadneAnalytics = () => {
               <img className = "hover:scale-105 transition ease-in-out  " src="/Photos/Pages/Analytics/BasicAnalytics/h6.png" alt="st" />
             </div>
           </div>
-          <p>Employ our queue management system to get notified when client wait times near the cashier counter are getting longer and reduce the dwell time. </p>
+          <p>With Ariadne queue management system you are notified when the waiting times in your cashier zone are increased.</p>
 
           <div className={styles.trioContainer} >
             <div className={styles.singleSnap}>
@@ -138,7 +147,7 @@ const AriadneAnalytics = () => {
       </div>
       <div className={styles.sectionA3}>
         <h1>Advanced Analytics</h1>
-        <p>Cool graphics and intuitive heat maps for your entire store that you may use to better manage your space.       </p>
+        <p>Intuitive heat maps for your entire store will guide you to better manage your space, improving your staffing and product placement.</p>
         <div className={styles.duoContainer} >
             <div className={styles.singleSnap}>
               <img className = "hover:scale-105 transition ease-in-out  " src="/Photos/Pages/Analytics/AdvancedAnalytics/h10.png" alt="st" />
@@ -148,7 +157,7 @@ const AriadneAnalytics = () => {
             </div>
             
           </div>
-        <p>Utilize our user-friendly graphs to plan practical activities and to improve your operational strategies.</p>
+        <p>Ariadne will measure the utilization of every square meter of your store and will guide you to identify your anchor products.</p>
 
         <div className={styles.duoContainer} >
             <div className={styles.singleSnap}>

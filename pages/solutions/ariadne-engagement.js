@@ -88,14 +88,14 @@ Engagement</motion.h1>
               Unlock Hyperlocal Marketing
               </h4>
               <p  >
-              We offer businesses the ability to send visitors dynamic and customised promotions based on their location and previous interests.
+              Ariadne offers businesses the ability to send visitors dynamic and customized promotions based on their current location and their previous interests.
               </p>
             </div>
             <div>
               <h4>
               Enable Real-Time Recommendations              </h4>
               <p>
-              Do you have a sweet spot in your business that you&rsquo;d like to introduce to your customers? We assist you in sending real-time customised recommendations to customers.
+              Do you have a hot spot in your business that you wish to introduce to your visitors? Ariadne assists you in sending real-time customized recommendations to visitors.
               </p>
             </div>
             <div>

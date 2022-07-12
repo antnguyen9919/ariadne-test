@@ -35,7 +35,7 @@ const Shopping = () => {
               
               
               <h1 className="text-left">Shopping Centers</h1>
-            <h4 className='text-left'>Ariadne Maps works with the leading mall management companies worldwide and enables them to take data-based, strategic decisions
+            <h4 className='text-left'>Ariadne helps leading shopping center operation companies worldwide to take data-driven, strategic decisions.
   
   </h4>
               </div>
@@ -58,7 +58,7 @@ const Shopping = () => {
                 <img src ="/Photos/Pages/Malls/Bel.svg" />
                   <h4>No Surprises
 </h4>
-                  <p>Don&rsquo;t encounter with surprises! You can advise your tenants when to expect mass of customers, weekly or daily, and maintain the customer satisfaction.
+                  <p>Avoid surprises! With Ariadne, you can predict daily and weekly visitation peaks of customers. You can automatically inform your tenants and maintain customer satisfaction.
 
 
 
@@ -68,7 +68,7 @@ const Shopping = () => {
                 <img src ="/Photos/Pages/Malls/Map.svg" />
                   <h4>Data-Driven Plan
 </h4>
-                  <p>Layout of shopping centers, marketing campaigns and tenant mix can be optimally designed with the detailed and precise data that we offer.
+                  <p>Layout of shopping centers, marketing campaigns and tenant mix can be optimally designed with the detailed and precise data that Ariadne offer.
 
 
 

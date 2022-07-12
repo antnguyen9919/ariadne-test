@@ -45,7 +45,7 @@ Navigation</motion.h1>
            </div>
 
               <div className={styles.heroSub}>
-              <motion.p initial="hidden" animate="enter" exit="exit" variants={herovariants} transition={{duration: 0.2, type: 'easeInOut'}}>Engage with your visitors at the right time and the right place. Develop strategies targeted to specific clusters of customers</motion.p>
+              <motion.p initial="hidden" animate="enter" exit="exit" variants={herovariants} transition={{duration: 0.2, type: 'easeInOut'}}>Engage with your visitors in the right place at the right time.. Develop strategies targeted to specific clusters of customers</motion.p>
               </div>
               
             </div>
@@ -63,9 +63,9 @@ Navigation</motion.h1>
       <div className={`${styles.gifbox}  bg-gradient-to-b from-[#ffffff] via-[#ffffff] to-[#f9f9f9]  ` } >
             <div className = {styles.giftext}>
               
-              <p>Ariadne Navigation performs the indoor navigation and indoor positioning for your business, making it simple for users to locate their destination.
+              <p>Ariadne can help you to navigate your customers inside and outside your store. In this way your visitors can always find the products they are looking for, while you are establishing a channel of communication with them, while located in your premises.
 </p>
-              <p>Ariadne Navigation also provides the user with information about his surroundings and reduces the time he invests in searching.</p>
+              <p>Ariadne navigation is used 2000% more than conventional navigation methods because it does not require from your visitors to install an application.</p>
             </div>
             <div className = {styles.gif}>
             <video  playsInline className='pointer-events-none' width="100%" src="/Videos/h2.mp4" autoPlay loop muted type = "videos/mp4"/>
@@ -79,7 +79,7 @@ Navigation</motion.h1>
               Indoor Positioning Services (IPS)
               </h4>
               <p>
-              We offer Indoor GPS, which assists customers and users in determining the most efficient route to their destination. Customers can also customize their routes by adding stops for more efficient planning.
+              Ariadne's Indoor GPS navigates your visitors to their destination. Your visitors will be  able to customize their routes by adding stops for more efficient planning.
 
               </p>
               </div>

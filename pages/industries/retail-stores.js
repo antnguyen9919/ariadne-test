@@ -30,8 +30,7 @@ const Retails = () => {
               
               
               <h1  className="text-left">Retail Stores</h1>
-            <h4  className='text-left'>Ariadne Maps helps retailers understand their customers, generate their conversion funnel,
-identify their unnecessary costs and increase their revenues.
+            <h4  className='text-left'>Ariadne helps retailers to understand their customers, generate their conversion funnel, identify their unnecessary costs and increase their revenue.
   
   </h4>
               </div>
@@ -94,7 +93,7 @@ identify their unnecessary costs and increase their revenues.
 
 
 </h4>
-                  <p>Marketing budgets are finite, which makes you use it to the full potential. Our solution enables marketers to target their spending where it is needed the most.
+                  <p>Marketing budgets are finite, which makes you use it to the full potential. Ariadne enables marketers to target their spending where it is needed the most.
 
 
 

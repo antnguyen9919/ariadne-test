@@ -567,7 +567,7 @@ variants = {variants} animate = {controls2}>
 
 
             </div>
-               <p>“With 20% increase in product revenue, we scale it immediately to all of our 17 stores”</p>
+               <p>“With 20% profit increase, we scale it immediately to all of our 17 stores.”</p>
                <h4 className='my-3'>Dimitris Galanis</h4>
                <h4 className='my-3'>CEO, Praktiker</h4>
           </motion.div>
@@ -690,7 +690,7 @@ variants = {variants} animate = {controls2}>
 initial="hidden"  exit="exit"
 variants = {variants} animate = {controls9}>
 
-          <h1 className="text-center ">Spotlight</h1>
+          <h1 className="text-center ">News</h1>
 
 
           </motion.div>

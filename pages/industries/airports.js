@@ -83,7 +83,7 @@ function Airport() {
                    <h4>Efficient Areas
  </h4>
                    <p>
-                   See which areas are visited the most and which areas are not visited at all! This way, you can analyze the density of each space and maximize the efficiency.
+                   Measure which areas are visited the most and which areas are not visited at all! This way, you can analyze the density of each space and maximize the efficiency.
  
  
  
