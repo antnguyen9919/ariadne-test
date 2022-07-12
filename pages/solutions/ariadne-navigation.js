@@ -79,7 +79,7 @@ Navigation</motion.h1>
               Indoor Positioning Services (IPS)
               </h4>
               <p>
-              Ariadne's Indoor GPS navigates your visitors to their destination. Your visitors will be  able to customize their routes by adding stops for more efficient planning.
+              Ariadne&rsquo;s Indoor GPS navigates your visitors to their destination. Your visitors will be  able to customize their routes by adding stops for more efficient planning.
 
               </p>
               </div>
