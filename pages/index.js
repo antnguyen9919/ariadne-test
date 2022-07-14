@@ -526,7 +526,7 @@ variants = {variants} animate = {controls2}>
             variants = {LRvariants} animate = {controls6}
             
             >
-              <h3 style={{marginBottom:"3vh"}}>Ariadne Journey Mapping</h3>
+              <h3 style={{marginBottom:"3vh"}}>Ariadne Customer Flow Mapping</h3>
               <p style={{marginBottom:"2vh"}}>Present promotions in your map to engage your visitors.</p>
               <p>Ariadne boosts your efficiency by enabling you to map and localize your products.</p>
             </motion.div>
