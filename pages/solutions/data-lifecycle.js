@@ -45,9 +45,6 @@ core values and we have developed unique approaches to enable privacy protection
       
       <h4>Static But Not The Real MAC</h4><br/>
       <p>The second common data stream is from devices that have been connected on the network. Here the MAC address is stable, while the phone is at the premise, however, the address is a random MAC address and it cannot be related to the user. When the phone is disconnected and reconnected to the network, it will likely use a different MAC address.</p><br/>
-      
-      <h4>Real MAC Address</h4><br/>
-      <p>The last and the most important category, is devices that probe for a network using their real MAC address. The vast majority of these phone have been manufactured before 2014 for iOS and before 2017 for android. This address can be linked to a user and hence it may fall to the general data protection regulations. It should be noted that only a small minority of devices probe with their real MAC address.</p><br/>
 
       <h4>Hashed ID</h4><br/>
       <p>Ariadne surveyor devices when sensed a signal produced an identifier that can link this signal to the phone. This ID has to be linked with the device since each phone location will be calculated based on readings from multiple devices. As a result, at this point, phones that probe using their read MAC address are only pseudo-anonymized.</p><br/>
