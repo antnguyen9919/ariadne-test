@@ -202,7 +202,7 @@ export default function Home(props) {
 
             <div className = {styles.heroTextContainer}>
             <div className={styles.heroText}>
-            <h1  > F{t('hero-title')}</h1>
+            <h1  > {t('hero-title')}</h1>
             <p style = {{paddingTop: "10px"}}>{t('hero-sub')}</p>
             <Link href ="/letstalk"><a><button className={styles.heroButton} /*'bg-red-600 hover:bg-red-700 py-1 px-3 2xl:text-lg' style = {{marginTop:"20px"}}*/ >Let&rsquo;s Talk</button></a></Link>
             </div>
