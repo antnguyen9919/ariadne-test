@@ -18,7 +18,7 @@ const Shopping = () => {
 
     <>
  <Head>
-        <title>Shopping Centers</title>
+        <title>People Counting | Customer Counting | Heatmap | Shopping Centers</title>
         <meta name="description" content="Ariadne Maps GmbH" />
         <link rel="icon" href="/ariadneicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>

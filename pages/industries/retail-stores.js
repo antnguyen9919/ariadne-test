@@ -13,7 +13,7 @@ const Retails = () => {
 
   <>
     <Head>
-    <title>Retail Stores</title>
+    <title>Customer Counting | Footfall Counter | Conversion Rate for Retail | Ariadne Maps</title>
     <meta name="description" content="Ariadne Maps GmbH" />
     <link rel="icon" href="/ariadneicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>

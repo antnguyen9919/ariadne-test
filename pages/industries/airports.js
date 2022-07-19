@@ -11,7 +11,7 @@ import Link from 'next/link'
 function Airport() {
   return<>
    <Head>
-        <title>Airports</title>
+        <title>Passenger counting for Airports | Queue Management | Ariadne Maps</title>
         <meta name="description" content="Ariadne Maps GmbH" />
         <link rel="icon" href="/ariadneicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>

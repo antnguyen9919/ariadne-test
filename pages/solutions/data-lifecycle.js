@@ -7,7 +7,7 @@ const datalifecycle = () => {
   return (
    <>
     <Head>
-        <title>Data Lifecycle</title>
+        <title>Certified Privacy Compliance | Data Lifecycle</title>
         <meta name="description" content="Ariadne Maps GmbH" />
         <link rel="icon" href="/ariadneicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>

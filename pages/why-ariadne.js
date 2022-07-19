@@ -14,7 +14,7 @@ const WhyAriadne = () => {
 
     <>
      <Head>
-        <title>Why Ariadne</title>
+        <title>Best People Counting Software | Why Ariadne</title>
         <meta name="description" content="Ariadne Maps GmbH" />
         <link rel="icon" href="/ariadneicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>

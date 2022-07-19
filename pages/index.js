@@ -182,7 +182,7 @@ export default function Home() {
 
       <div >
       <Head>
-        <title>Ariadne Maps</title>
+        <title>People Counter | Footfall Counter | Customer Counter - Ariadne Maps</title>
         <meta name="description" content="Ariadne Maps GmbH" />
         <link rel="icon" href="/ariadneicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>

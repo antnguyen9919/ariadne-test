@@ -28,7 +28,7 @@ const ariadneNavigation = () => {
   return (
     <div>
       <Head>
-        <title>Ariadne Navigation</title>
+        <title>Indoor Navigation | Indoor Tracking | Ariadne Navigation</title>
         <meta name="description" content="Ariadne Navigation" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="/ariadneicon.png" />

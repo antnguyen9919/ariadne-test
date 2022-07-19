@@ -12,7 +12,7 @@ const cities = () => {
   return (
     <>
     <Head>
-        <title>Cities</title>
+        <title>People Counting | Crowd Control for Cities</title>
         <meta name="description" content="Ariadne Maps GmbH" />
         <link rel="icon" href="/ariadneicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>

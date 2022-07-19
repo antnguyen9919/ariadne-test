@@ -32,7 +32,7 @@ const AriadneAnalytics = () => {
   return (
     <div>
       <Head>
-        <title>Ariadne Analytics</title>
+        <title>People Counting Software | Customer Tracking | Visitor Counter | Ariadne Analytics</title>
         <meta name="description" content="Ariadne Analytics" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="/ariadneicon.png" />

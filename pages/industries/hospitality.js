@@ -12,7 +12,7 @@ const hospitality = () => {
   return (
    <>
     <Head>
-        <title>Hospitality</title>
+        <title>Visitor counting, People counting, Customer journey tracking | Hospitality</title>
         <meta name="description" content="Ariadne Maps GmbH" />
         <link rel="icon" href="/ariadneicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
