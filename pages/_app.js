@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import {AnimatePresence} from "framer-motion"
 import { useEffect } from 'react';
 import TagManager from 'react-gtm-module';
-
+import { appWithTranslation } from 'next-i18next';
 import Script from 'next/script'
 
  
@@ -40,4 +40,5 @@ function MyApp({ Component, pageProps }) {
    ) 
 }
 
-export default MyApp
+ 
+export default appWithTranslation(MyApp);
