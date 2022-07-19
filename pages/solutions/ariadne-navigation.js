@@ -230,7 +230,7 @@ We enable and lead you to hyperlocal marketing.
 
         <div className={styles.blackCTA}>
         <div className={styles.innerCTA}>
-        <h1 className='text-center text-white' style={{fontWeight:"300"}} >Work together?</h1>
+        <h1 className='text-center text-white' style={{fontWeight:"300"}} >Get a month for free</h1>
       <Link href ="/letstalk"><button className=' bg-white text-black hover:bg-slate-200 py-2 mt-8 px-3 text-lg mt-5'>Let&rsquo;s Talk</button></Link>
       </div>
         </div>

@@ -116,7 +116,7 @@ function Airport() {
              </div>
              <div className={styles.blackCTA} style={{marginBottom:"-1.5em"}}>
         <div className={styles.innerCTA}>
-        <h1 className='text-center text-white' style={{fontWeight:"300"}} >Work together?</h1>
+        <h1 className='text-center text-white' style={{fontWeight:"300"}} >Get a month for free</h1>
       <Link href ="/letstalk"><a><button className=' bg-white text-black hover:bg-slate-200 py-2 mt-8 px-3 text-lg mt-5'>Let&rsquo;s Talk</button></a></Link>
       </div>
         </div>

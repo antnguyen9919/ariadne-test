@@ -47,7 +47,7 @@ const AriadneEngagement = () => {
             <div className={styles.heroText}>
             <motion.h1 initial="hidden" animate="enter" exit="exit" variants={herovariants} transition={{duration: 0.5, type: 'spring', bounce: 0.3}} >Ariadne <br/>
 Engagement</motion.h1>
-              <motion.p initial="hidden" animate="enter" exit="exit" variants={herovariants} transition={{duration: 0.2, type: 'easeInOut'}}>Engage with your visitors at the right time and the right place. Develop strategies targeted to specific clusters of customers</motion.p>
+              <motion.p initial="hidden" animate="enter" exit="exit" variants={herovariants} transition={{duration: 0.2, type: 'easeInOut'}}>Engage with your visitors in the right place at the right time.. Develop strategies targeted to specific clusters of customers</motion.p>
               
             </div>
             </div>
@@ -182,7 +182,7 @@ Engagement</motion.h1>
       </main>
       <div className={styles.blackCTA}>
         <div className={styles.innerCTA}>
-        <h1 className='text-center text-white' style={{fontWeight:"300"}} >Work together?</h1>
+        <h1 className='text-center text-white' style={{fontWeight:"300"}} >Get a month for free</h1>
       <Link href ="/letstalk"><a><button className=' bg-white text-black hover:bg-slate-200 py-2 mt-8 px-3 text-lg mt-5'>Let&rsquo;s Talk</button></a></Link>
       </div>
         </div>
