@@ -247,7 +247,7 @@ const  Navbar = () => {
                  onMouseEnter={()=>langRef.current.click()}
                  className='inline-flex items-center text-base font-medium rounded-ms  focus:outline-none '
                  >
-                   <span><CircleFlag countryCode={(locale==="de"||locale==="fr")? locale: "gb"  } className=' w-8 h-full 2xl:h-9 ml-7 transition ease-in hover:scale-110' /></span>
+                   <span><CircleFlag countryCode={(locale==="de"||locale==="fr")? locale: "gb"  } className=' w-8 h-full   ml-7 transition ease-in hover:scale-110' /></span>
 
                  </Popover.Button>
                  <Transition
