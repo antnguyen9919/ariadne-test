@@ -204,7 +204,7 @@ export default function Home(props) {
             <div className={styles.heroText}>
             <h1  > {t('hero-title')}</h1>
             <p style = {{paddingTop: "10px"}}>{t('hero-sub')}</p>
-            <Link href ="/letstalk"><a><button className={styles.heroButton} /*'bg-red-600 hover:bg-red-700 py-1 px-3 2xl:text-lg' style = {{marginTop:"20px"}}*/ >Let&rsquo;s Talk</button></a></Link>
+            <Link href ="/letstalk"><a><button className={styles.heroButton} /*'bg-red-600 hover:bg-red-700 py-1 px-3 2xl:text-lg' style = {{marginTop:"20px"}}*/>{t('hero_button')}</button></a></Link>
             </div>
             </div>
 
@@ -340,7 +340,7 @@ export default function Home(props) {
                >
               <p
               
-              className='text-center text-red-500' ><button className=' hover:scale-105'  onClick={openModal} style={{marginTop:"25px", fontSize:"22px"}}><AddCircleOutlineIcon />&nbsp;Enlarge</button></p>
+              className='text-center text-red-500' ><button className=' hover:scale-105'  onClick={openModal} style={{marginTop:"25px", fontSize:"22px"}}><AddCircleOutlineIcon />&nbsp;{t('section1_enlarge')}</button></p>
               </div>
 
               <Modal
@@ -366,7 +366,7 @@ export default function Home(props) {
           
             <div className='flex flex-row justify-center items-center'>
             <div className=' w-2/3  items-center justify-center'>
-          <h1 className = "text-center text-4xl" style={{marginBottom:"20px"}} >Omnichannel Solution</h1>
+          <h1 className = "text-center text-4xl" style={{marginBottom:"20px"}}>{t('section1_picsheader')}</h1>
       <Carousel infinite 
       
       responsive={responsive}
@@ -379,24 +379,24 @@ export default function Home(props) {
             
             src={eAnalytics} alt = 'eanalytics' />
             </div>
-            <h1 className='text-3xl text-center' style={{marginTop:"20px"}}>Ariadne Analytics</h1>
-            <p>People Counting, Dwell Time, Heat Map, Alerts, Transitions…</p>
+            <h1 className='text-3xl text-center' style={{marginTop:"20px"}}>{t('section1_pic1title')}</h1>
+            <p>{t('section1_pic1subtitle')}</p>
           </div>
 
           <div className="flex flex-col items-center justify-center content-center align-center " >
             <div className='w-full' >
             <Image layout='responsive' src={eCRM} alt ='ecrm' />
             </div>
-            <h1 className='text-3xl text-center' style={{marginTop:"20px"}}>CRM Optin Tool</h1>
-            <p>Customers opt-in and you can see the contact info store by store</p>
+            <h1 className='text-3xl text-center' style={{marginTop:"20px"}}>{t('section1_pic2title')}</h1>
+            <p>{t('section1_pic2subtitle')}</p>
           </div>
 
           <div className="flex flex-col items-center justify-center content-center align-center " >
             <div className='w-full ' >
             <Image layout='responsive' src={ERP} alt ='erp' />
             </div>
-            <h1 className='text-3xl text-center' style={{marginTop:"20px"}}>ERP Data Integration</h1>
-            <p>Measure the conversion rate of each product</p>
+            <h1 className='text-3xl text-center' style={{marginTop:"20px"}}>{t("section1_pic3title")}</h1>
+            <p>{t('section1_pic3subtitle')}</p>
           </div>
 
           
@@ -468,9 +468,9 @@ variants = {variants} animate = {controls2}>
              initial="hidden"  exit="exit"
              variants = {LRvariants} animate = {controls3}>
                
-              <h3 style={{marginBottom:"3vh"}}>Ariadne Analytics</h3>
-              <p style={{marginBottom:"2vh"}}>Obtain people counting, heatmaps, loyalty rate and more!</p>
-              <p>With Ariadne analytics, you can review your performance in real time.</p>
+              <h3 style={{marginBottom:"3vh"}}>{t('section3_t1')}</h3>
+              <p style={{marginBottom:"2vh"}}>{t('section3_p1a')}</p>
+              <p>{t('section3_p1b')}</p>
             </motion.div>
 
             <motion.div className = {styles.gif}
@@ -490,9 +490,9 @@ variants = {variants} animate = {controls2}>
             variants = {LRvariants} animate = {controls4}
             
             >
-              <h3 style={{marginBottom:"3vh"}}>Ariadne Navigation</h3>
-              <p style={{marginBottom:"2vh"}}>Navigate your visitors and guests for an enhanced experience!</p>
-              <p>Present promotions in your map to engage and enhance your visitors satisfaction.</p>
+              <h3 style={{marginBottom:"3vh"}}>{t('section3_t2')}</h3>
+              <p style={{marginBottom:"2vh"}}>{t('section3_p2a')}</p>
+              <p>{t('section3_p2b')}</p>
             </motion.div>
             <motion.div className = {styles.gif}
             transition={{duration: 0.5, type: 'easeInOut'}} 
@@ -510,9 +510,9 @@ variants = {variants} animate = {controls2}>
             initial="hidden"  exit="exit"
             variants = {LRvariants} animate = {controls5}
             >
-              <h3 style={{marginBottom:"3vh"}}>Ariadne Engagement</h3>
-              <p style={{marginBottom:"2vh"}}>Ariadne enables your visitors to opt-in to your loyalty program!</p>
-              <p>The opt-in feature enables you to push notifications to your visitors the right moment.</p>
+              <h3 style={{marginBottom:"3vh"}}>{t('section3_t3')}</h3>
+              <p style={{marginBottom:"2vh"}}>{t('section3_p3a')}</p>
+              <p>{t('section3_p3b')}</p>
             </motion.div>
             <motion.div className = {styles.gif}
              transition={{duration: 0.5, type: 'easeInOut'}} 
@@ -530,9 +530,9 @@ variants = {variants} animate = {controls2}>
             variants = {LRvariants} animate = {controls6}
             
             >
-              <h3 style={{marginBottom:"3vh"}}>Ariadne Customer Flow Mapping</h3>
-              <p style={{marginBottom:"2vh"}}>Present promotions in your map to engage your visitors.</p>
-              <p>Ariadne boosts your efficiency by enabling you to map and localize your products.</p>
+              <h3 style={{marginBottom:"3vh"}}>{t('section3_t4')}</h3>
+              <p style={{marginBottom:"2vh"}}>{t('section3_p4a')}</p>
+              <p>{t('section3_p4b')}</p>
             </motion.div>
             <motion.div className = {styles.gif}
             transition={{duration: 0.5, type: 'easeInOut'}} 
@@ -557,7 +557,7 @@ variants = {variants} animate = {controls2}>
            initial="hidden"  exit="exit"
            variants = {DUvariants} animate = {controls7}
         >
-        <h1 className='text-center'>Trusted by industry leaders</h1>
+        <h1 className='text-center'>{t('section4')}</h1>
 
         </motion.div>
           <div className={styles.testimonialContainer}>
@@ -571,9 +571,9 @@ variants = {variants} animate = {controls2}>
 
 
             </div>
-               <p>“With 20% profit increase, we scale it immediately to all of our 17 stores.”</p>
+               <p>{t('section4_p1a')}</p>
                <h4 className='my-3'>Dimitris Galanis</h4>
-               <h4 className='my-3'>CEO, Praktiker</h4>
+               <h4 className='my-3'>{t('section4_p1b')}</h4>
           </motion.div>
 
           <motion.div className = {styles.testimonialBox}
@@ -585,9 +585,9 @@ variants = {variants} animate = {controls2}>
 
 
             </div>
-               <p>&quot;When they said: We are the Google Analytics of the physical world, they were not kidding!&quot;</p>
+               <p>{t('section4_p2a')}</p>
                <h4 className='my-3'>Thomas Grabert</h4>
-               <h4 className='my-3'>Managing Director, Ö-Center Mall</h4>
+               <h4 className='my-3'>{t('section4_p2b')}</h4>
           </motion.div>
 
           <motion.div className = {styles.testimonialBox}
@@ -599,9 +599,9 @@ variants = {variants} animate = {controls2}>
 
 
             </div>
-               <p>“A truly plug-n-play solution! I did the installation myself!”</p>
+               <p>{t('section4_p3a')}</p>
                <h4 className='my-3'>Gina Jacobs</h4>
-               <h4 className='my-3'>Business Development Manager, San Diego Airport</h4>
+               <h4 className='my-3'>{'section4_p3b')}</h4>
           </motion.div>
 
           <motion.div className = {styles.testimonialBox}
@@ -613,9 +613,9 @@ variants = {variants} animate = {controls2}>
 
 
             </div>
-               <p>“We recorded the ROI already in the first month with a 40% increase in product revenue!”</p>
+               <p>{t('section4_p4a')}</p>
                <h4 className='my-3'>Rainer Latzlsperger</h4>
-               <h4 className='my-3'>Procurist, Weko</h4>
+               <h4 className='my-3'>{t('section4_p4b')}</h4>
           </motion.div>
 
 
@@ -632,8 +632,8 @@ variants = {variants} animate = {controls2}>
            initial="hidden"  exit="exit"
            variants = {DUvariants} animate = {controls8}
         >
-        <h1 className='text-center'>Get Started</h1>
-        <p className='text-center'>Ariadne is a plug-n-play solution that does not require ethernet connection or complicated installations.</p>
+        <h1 className='text-center'>{t('section5_title')}</h1>
+        <p className='text-center'>{t('section5_sub')}</p>
         </motion.div>
           <div className={styles.products}>
 
@@ -649,8 +649,8 @@ variants = {variants} animate = {controls2}>
 
             </div>
           
-                  <h2 className='mb-3 mt-7'>Configuration</h2>
-                  <p>Design your own floorplan with our state of the art mapping solutions.</p>
+                  <h2 className='mb-3 mt-7'>{t('section5_a')}</h2>
+                  <p>{t('section5_ap')}</p>
           </motion.div>
 
           <motion.div className = {styles.product}
@@ -662,8 +662,8 @@ variants = {variants} animate = {controls2}>
 
 
             </div>
-                  <h2 className='mb-3 mt-7'>Installation</h2>
-                  <p>Simply plug the devices in the predetermined sockets.</p>
+                  <h2 className='mb-3 mt-7'>{t('Installation')}</h2>
+                  <p>{t('section5_bp')}</p>
           </motion.div>
 
           <motion.div className = {styles.product}
@@ -677,8 +677,8 @@ variants = {variants} animate = {controls2}>
 
             </div>
           
-                  <h2 className='mb-3 mt-7'>The Dashboard</h2>
-                  <p>Voila! Now you can make the most out of your existing traffic.</p>
+                  <h2 className='mb-3 mt-7'>{t('section5_c')}</h2>
+                  <p>{t('section5_cp')}</p>
           </motion.div>
 
 
@@ -694,7 +694,7 @@ variants = {variants} animate = {controls2}>
 initial="hidden"  exit="exit"
 variants = {variants} animate = {controls9}>
 
-          <h1 className="text-center ">News</h1>
+          <h1 className="text-center ">{t('section6')}</h1>
 
 
           </motion.div>
@@ -716,7 +716,7 @@ variants = {variants} animate = {controls9}>
 
         <div className={`${styles.section7}  bg-gradient-to-b from-[#ffffff] via-[#ffffff] to-[#f9f9f9]  ` }>
 
-          <h1 className="text-center">Let&rsquo;s talk</h1>
+          <h1 className="text-center">{t('section7')}</h1>
           
 
           <iframe src="https://calendly.com/georgios-ariadnemaps/30min?month=2022-03"
