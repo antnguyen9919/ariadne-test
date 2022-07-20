@@ -601,7 +601,7 @@ variants = {variants} animate = {controls2}>
             </div>
                <p>{t('section4_p3a')}</p>
                <h4 className='my-3'>Gina Jacobs</h4>
-               <h4 className='my-3'>{'section4_p3b')}</h4>
+               <h4 className='my-3'>{t('section4_p3b')}</h4>
           </motion.div>
 
           <motion.div className = {styles.testimonialBox}
