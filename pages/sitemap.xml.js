@@ -32,7 +32,10 @@ export const getServerSideProps = async ({ res }) => {
     
   
   const staticPages = fs
-    .readdirSync("pages")
+    .readdirSync({
+      development: 'pages',
+      production: './',
+    }[process.env.NODE_ENV])
     .filter((staticPage) => {
       return ![
         "api",
@@ -60,7 +63,10 @@ export const getServerSideProps = async ({ res }) => {
      
 
     const industries = fs
-    .readdirSync("pages/industries")
+    .readdirSync({
+      development: 'pages/industries',
+      production: './industries',
+    }[process.env.NODE_ENV])
     .filter((staticPage) => {
       return ![
         "index.js",
@@ -75,7 +81,10 @@ export const getServerSideProps = async ({ res }) => {
     });
 
     const solutions = fs
-    .readdirSync("pages/solutions")
+    .readdirSync({
+      development: 'pages/solutions',
+      production: './solutions',
+    }[process.env.NODE_ENV])
     .filter((staticPage) => {
       return ![
         "index.js",
@@ -90,7 +99,10 @@ export const getServerSideProps = async ({ res }) => {
     });
     
     const company =fs
-    .readdirSync("pages/company")
+    .readdirSync({
+      development: 'pages/company',
+      production: './company',
+    }[process.env.NODE_ENV])
     .filter((staticPage) => {
       return ![
         "index.js",
