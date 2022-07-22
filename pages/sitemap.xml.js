@@ -34,7 +34,7 @@ export const getServerSideProps = async ({ res }) => {
   const staticPages = fs
     .readdirSync({
       development: 'pages',
-      production: './',
+      production: '.output/server/pages',
     }[process.env.NODE_ENV])
     .filter((staticPage) => {
       return ![
@@ -65,7 +65,7 @@ export const getServerSideProps = async ({ res }) => {
     const industries = fs
     .readdirSync({
       development: 'pages/industries',
-      production: './industries',
+      production: '.output/server/pages/industries',
     }[process.env.NODE_ENV])
     .filter((staticPage) => {
       return ![
@@ -83,7 +83,7 @@ export const getServerSideProps = async ({ res }) => {
     const solutions = fs
     .readdirSync({
       development: 'pages/solutions',
-      production: './solutions',
+      production: '.output/server/pages/solutions',
     }[process.env.NODE_ENV])
     .filter((staticPage) => {
       return ![
@@ -101,7 +101,7 @@ export const getServerSideProps = async ({ res }) => {
     const company =fs
     .readdirSync({
       development: 'pages/company',
-      production: './company',
+      production: '.output/server/pages/',
     }[process.env.NODE_ENV])
     .filter((staticPage) => {
       return ![
