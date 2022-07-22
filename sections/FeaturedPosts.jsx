@@ -52,13 +52,24 @@ const FeaturedPosts = () => {
   );
 
   return (
-    <div className="mb-8">
-      <Carousel infinite 
+    <div className="mb-10">
+      <Carousel 
+      infinite 
       // customLeftArrow={customLeftArrow} 
       // customRightArrow={customRightArrow} 
-      responsive={responsive} itemClass="px-4">
+      showDots={false}
+
+      removeArrowOnDeviceType={["tablet", "mobile"]}
+      ssr={true}
+      responsive={responsive} 
+      // deviceType={this.props.deviceType}
+  
+      itemClass="px-4"
+      // sliderClass="px-4"
+      
+      >
         {dataLoaded && featuredPosts.map((post, index) => (
-          <FeaturedPostCard key={index} post={post} />
+          <FeaturedPostCard className="hover:brightness-110" key={index} post={post} />
         ))}
       </Carousel>
     </div>

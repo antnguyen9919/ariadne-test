@@ -654,7 +654,8 @@
     
     .gif{
         width: 90%; 
-        padding: 3em;
+        padding-top: 3em;
+        padding-bottom: 3em;
     }
     
     .section4{
@@ -748,9 +749,15 @@
     }
     
     .section7{
-        padding: 10vh 7vw 15vh 7vw;
+        /* height: 100vh; */
+        /* padding: 10vh 7vw 15vh 7vw; */
+        padding-left: 1em;
+        padding-right: 1em;
         display: flex;
         flex-direction: column;
+    }
+    .section7 >iframe{
+        height: 120vh;
     }
     
     .section7 h1{

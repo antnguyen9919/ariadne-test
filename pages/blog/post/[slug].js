@@ -6,8 +6,11 @@ import Head from 'next/head'
 import {PostDetail,PostWidget, Author, BlogHeader, Categories, Loader} from '../../../components'
 
 
+
 const PostDetails = ({ post }) => {
   const router = useRouter();
+
+  const { locales} = useRouter();
   
   if (router.isFallback) {
     return <Loader />;
@@ -56,13 +59,18 @@ export async function getStaticProps({params}) {
   };
 }
 
-export async function getStaticPaths(){
+export async function getStaticPaths({locales}){
   const posts = await getPosts();
   
+  const paths = posts
+  .map(({node:{slug}}) => locales.map((locale) => ({
+      params: { slug},
+      locale
+  })))
+  .flat()
+
   return {
-    paths: posts.map(({node: {slug} })=>(
-      {params:{slug} }
-    ) ),
+    paths,
     fallback: false,
   }
 }
