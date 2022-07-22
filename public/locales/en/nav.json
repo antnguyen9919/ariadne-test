@@ -1,1 +1,24 @@
-{"company":"Company","company_a":"About Us","company_b":"Blog","company_c":"Careers","company_d":"Contact","industries":"Industries","industries_a":"Retail stores","industries_b":"Shopping centres","industries_c":"Airports","industries_d":"Transportation","industries_e":"Cities","industries_f":"Hospitality","solutions":"Solutions","solutions_a":"Ariadne Analytics","solutions_b":"Ariadne Navigation","solutions_c":"Ariadne Engagement","talk":"Let's talk","whyariadne":"Why Ariadne"}
+{"company":"Company",
+
+"company_a":"About Us",
+"company_b":"Blog",
+"company_c":"Careers",
+"company_d":"Contact",
+
+"industries":"Industries",
+
+"industries_a":"Retail stores",
+"industries_b":"Shopping centres",
+"industries_c":"Airports",
+"industries_d":"Transportation",
+"industries_e":"Cities",
+"industries_f":"Hospitality",
+
+"solutions":"Solutions",
+
+"solutions_a":"Ariadne Analytics",
+"solutions_b":"Ariadne Navigation",
+"solutions_c":"Ariadne Engagement",
+
+"talk":"Let&rsquo;s talk",
+"whyariadne":"Why Ariadne"}

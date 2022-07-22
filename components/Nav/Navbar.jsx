@@ -2,41 +2,27 @@ import React,{useRef} from 'react'
 import Link from 'next/link' 
 import {Popover,Transition} from '@headlessui/react'
 import { CircleFlag } from 'react-circle-flags'
-import { i18n } from 'next-i18next'
+// import { i18n } from 'next-i18next'
 import { useRouter } from "next/router";
 import {DiGoogleAnalytics} from 'react-icons/di'
 import {BiNavigation,BiNotification,BiUser} from 'react-icons/bi'
-
+ 
 // import {FaUserCircle} from 'react-icons/fa'
 
 import {MdLocalAirport,MdStoreMallDirectory,
   MdEmojiTransportation,MdLocationCity,MdRoomService, MdMenu} from 'react-icons/md'
 import {AiOutlineShopping} from 'react-icons/ai'
 
+// import { useTranslation } from 'next-i18next';
+import { useEffect,useState } from 'react'
 
-const solutions=[
-  {title:"Ariadne Analytics",icon:DiGoogleAnalytics,href:"/solutions/ariadne-analytics"},
-{title:"Ariadne Navigation",icon:BiNavigation, href:"/solutions/ariadne-navigation"},
-  {title:"Ariadne Engagement",icon:BiNotification, href:"/solutions/ariadne-engagement"},
-  
-]
-const industries=[
-  {title:"Retail stores",icon:MdStoreMallDirectory, href:"/industries/retail-stores"},
-  {title:"Shopping centers",icon:AiOutlineShopping, href:"/industries/shopping-centers"},
-  {title:"Airports",icon:MdLocalAirport, href:"/industries/airports"},
-  {title:"Transportation",icon:MdEmojiTransportation, href:"/industries/transportation"},
-  {title:"Cities",icon:MdLocationCity, href:"/industries/cities"},
-  {title:"Hospitality",icon:MdRoomService, href:"/industries/hospitality"},
-  
-]
-const company=[
-  {title:"About Us",href:"/company/about-us"},
-  {title:"Blog",href:"/blog"},
-  {title:"Careers",href:"/company/careers"},
-  {title:"Contact",href:"/company/contact"},
-  // {title:"Hospitality",icon:BsInfoSquare, descriptions:"hospitality",href:"#"},
-  
-]
+
+
+
+
+
+
+
 
 const  Navbar = () => {
   let solutionRef = useRef(null)
@@ -46,8 +32,78 @@ const  Navbar = () => {
   
 
   const { locale, locales, defaultLocale, asPath } = useRouter();
+
+  const translations = {
+  en:{"company":"Company","company_a":"About Us","company_b":"Blog","company_c":"Careers","company_d":"Contact","industries":"Industries","industries_a":"Retail stores","industries_b":"Shopping centres","industries_c":"Airports","industries_d":"Transportation","industries_e":"Cities","industries_f":"Hospitality","solutions":"Solutions","solutions_a":"Ariadne Analytics","solutions_b":"Ariadne Navigation","solutions_c":"Ariadne Engagement","talk":"Let's talk","whyariadne":"Why Ariadne"},
+  de:{
+    "company":"Unternehmen",
+    "company_a":"Über uns",
+    "company_b":"Blog",
+    "company_c":"Karriere",
+    "company_d":"Kontakt",
+    "industries":"Branchen",
+    "industries_a":"Einzelhandel",
+    "industries_b":"Einkaufszentren",
+    "industries_c":"Flughäfen",
+    "industries_d":"Transport",
+    "industries_e":"Städte",
+    "industries_f":"Gastronomie",
+    "solutions":"Lösungen",
+    "solutions_a":"Ariadne Analytics",
+    "solutions_b":"Ariadne-Navigation",
+    "solutions_c":"Ariadne-Engagement",
+    "talk":"Mehr erfahren",
+    "whyariadne":"Warum Ariadne"},
+  fr:{"company":"Compagnie","company_a":"À propos de nous","company_b":"Blog","company_c":"Carrières","company_d":"Contact","industries":"les industries","industries_a":"Les magasins de détail","industries_b":"Centres commerciaux","industries_c":"Aéroports","industries_d":"Transport","industries_e":"Villes","industries_f":"Hospitalité","solutions":"Solutions","solutions_a":"Ariane Analytics","solutions_b":"Navigation d'Ariane","solutions_c":"Fiançailles d'Ariane","talk":"Parlons","whyariadne":"Pourquoi Ariane"}
+}
+
+const [language,setLanguage]=useState({})
+
+  useEffect(()=>{
+    console.log(locale)
+    if(locale==='de') {
+      console.log('locale is german')
+      setLanguage(translations.de)  
+    } 
+      else if(locale==='en'){
+        console.log('locale is uk')
+        setLanguage(translations.en) 
+        // console.log("object: ",language)
+      } else {
+        console.log('locale is french')
+        setLanguage(translations.fr)  
+        // console.log("object: ",language)
+      }
+
+     
+  },[])
+
+  const solutions=[
+    {title:`${language.solutions_a}`,icon:DiGoogleAnalytics,href:"/solutions/ariadne-analytics"},
+  {title:`${language.solutions_b}`,icon:BiNavigation, href:"/solutions/ariadne-navigation"},
+    {title:`${language.solutions_c}`,icon:BiNotification, href:"/solutions/ariadne-engagement"},
+    
+  ]
+  const industries=[
+    {title:`${language.industries_a}`,icon:MdStoreMallDirectory, href:"/industries/retail-stores"},
+    {title:`${language.industries_b}`,icon:AiOutlineShopping, href:"/industries/shopping-centers"},
+    {title:`${language.industries_c}`,icon:MdLocalAirport, href:"/industries/airports"},
+    {title:`${language.industries_d}`,icon:MdEmojiTransportation, href:"/industries/transportation"},
+    {title:`${language.industries_e}`,icon:MdLocationCity, href:"/industries/cities"},
+    {title:`${language.industries_f}`,icon:MdRoomService, href:"/industries/hospitality"},
+    
+  ]
+  const company=[
+    {title:`${language.company_a}`,href:"/company/about-us"},
+    {title:`${language.company_b}`,href:"/blog"},
+    {title:`${language.company_c}`,href:"/company/careers"},
+    {title:`${language.company_d}`,href:"/company/contact"},
+    
+    
+  ]
+
+    
   
-  console.log(locale)
   return (
 
     <div  >
@@ -75,7 +131,7 @@ const  Navbar = () => {
             </div>
             
 
-            <div className='hidden w-3/4 md:flex md:w-3/4 xl:w-2/4 '>
+            <div className={(locale==='de'||locale==='fr')?'hidden min-w-3/4 md:flex md:w-3/4 xl:w-7/12':'hidden min-w-3/4 md:flex md:w-3/4 xl:w-2/4'}>
               
             <Popover.Group as='nav' className='flex w-full justify-evenly ' >
              
@@ -88,7 +144,7 @@ const  Navbar = () => {
                  onMouseEnter={()=>solutionRef.current.click()}
                  className='inline-flex items-center text-base font-medium rounded-ms  focus:outline-none'
                  >
-                   <span className='text-white font-light text-lg 2xl:text-2xl  hover:text-red-600 transition ease-in'>Solutions</span>
+                   <span className='text-white font-light text-lg 2xl:text-2xl  hover:text-red-600 transition ease-in'>{language.solutions}</span>
 
                  </Popover.Button>
 
@@ -136,7 +192,7 @@ const  Navbar = () => {
                  onMouseEnter={()=>industriesRef.current.click()}
                  className='inline-flex items-center text-base font-medium rounded-ms  focus:outline-none'
                  >
-                   <span className='text-white font-light text-lg 2xl:text-2xl hover:text-red-600 transition ease-in'>Industries</span>
+                   <span className='text-white font-light text-lg 2xl:text-2xl hover:text-red-600 transition ease-in'>{language.industries}</span>
 
                  </Popover.Button>
                  <Transition
@@ -186,7 +242,7 @@ const  Navbar = () => {
                  onMouseEnter={()=>companyRef.current.click()}
                  className='inline-flex items-center text-base font-medium rounded-ms  focus:outline-none '
                  >
-                   <span className='text-white font-light text-lg 2xl:text-2xl hover:text-red-600 transition ease-in '>Company</span>
+                   <span className='text-white font-light text-lg 2xl:text-2xl hover:text-red-600 transition ease-in '>{language.company}</span>
 
                  </Popover.Button>
                  <Transition
@@ -232,7 +288,7 @@ const  Navbar = () => {
             
             
             <div className='items-center justify-end hidden md:flex'>
-            <Link href ="/letstalk"><a><button className='bg-red-600 hover:bg-red-700 py-1 px-3 2xl:text-lg text-white'  >Let&rsquo;s Talk</button></a></Link>
+            <Link href ="/letstalk"><a><button className='bg-red-600 hover:bg-red-700 py-1 px-3 2xl:text-lg text-white'  >{language.talk}</button></a></Link>
             {/* <Link href={!user? '/login':'/dashboard'}></Link> */}
             {/* <a className=' text-base 2xl:text-2xl' href ='https://app.seulet.com' >
             <FaUserCircle className=' w-6 h-5 2xl:h-9 ml-7 text-white transition ease-in hover:scale-110' />
@@ -303,7 +359,7 @@ const  Navbar = () => {
         <div className='md:hidden '>
         {/* <h1 className='text-white'>sas</h1> */}
         <Popover.Panel className="absolute z-10 bg-black w-full text-white">
-                            <h1 className='text-center'>Solutions</h1>
+                            <h1 className='text-center'>{language.solutions}</h1>
                             <div className='relative grid grid-cols-2 gap-6 px-5 py-6 sm:gap-8 sm:p-8'>
                       {solutions.map((solution,index)=>(
                         <a key = {index} href = {solution.href} className='flex items-start 
@@ -317,7 +373,7 @@ const  Navbar = () => {
                       ))}
                     </div>
                     
-                    <h1 className='text-center'>Industries</h1>
+                    <h1 className='text-center'>{language.industries}</h1>
                             <div className='relative grid grid-cols-2 gap-6 px-5 py-6 sm:gap-8 sm:p-8'>
 
                       {industries.map((solution,index)=>(
@@ -332,9 +388,9 @@ const  Navbar = () => {
                       ))}
                     </div>
 
-                    <h1 className='text-center'>Company</h1>
+                    <h1 className='text-center'>{language.company}</h1>
                             <div className='relative grid grid-cols-2 gap-6 px-5 py-6 sm:gap-8 sm:p-8'>
-                                  <a href='#' className='text-sm p-2 -m-3 text-lg font-light text-white' >Why Ariadne?</a>
+                                  <a href='#' className='text-sm p-2 -m-3 text-lg font-light text-white' >{language.whyariadne}?</a>
                             {company.map((comp,index)=>(
                         <a key = {index} href = {comp.href} className='flex items-start 
                         p-2 -m-3 rounded-lg text-white ' >
@@ -347,10 +403,20 @@ const  Navbar = () => {
                       ))}
                     </div>
 
+                    
+                              <div className='flex w-full justify-center mb-3'>
+                              <span><Link href={asPath} locale="en"><CircleFlag countryCode="gb" 
+                              className ={(locale==='en')?` w-8 h-full 2xl:h-9 ml-7 brightness-110 border-2 rounded-full border-emerald-600`:` w-8 h-full 2xl:h-9 ml-7 brightness-50`} /></Link> </span>
+                              <span><Link href={asPath} locale="de"><CircleFlag countryCode="de" className ={(locale==='de')?` w-8 h-full 2xl:h-9 ml-7 brightness-110 border-2 rounded-full border-solid border-emerald-600`:` w-8 h-full 2xl:h-9 ml-7 brightness-50`} /></Link> </span>
+                              <span><Link href={asPath} locale="fr"><CircleFlag countryCode="fr" className ={(locale==='fr')?` w-8 h-full 2xl:h-9 ml-7 brightness-110 border-2 rounded-full border-emerald-600`:` w-8 h-full 2xl:h-9 ml-7 brightness-50`} /></Link> </span>
+
+                              </div>
 
         
       </Popover.Panel>
             </div>
+
+            
       
         
     </Popover>
