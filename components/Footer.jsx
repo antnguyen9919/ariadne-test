@@ -108,7 +108,7 @@ const [language,setLanguage]=useState({})
   <div className={styles.footerLinkWrapper}>
 
     <div className={styles.footerLinkItems}>
-      <h3 className='text-2xl'><a>{language.tech}</a></h3>
+      <h3 className='text-2xl'>{language.tech}</h3>
       {/* <Link href='/solutions/ariadne-mapping'>Ariadne Mapping</Link> */}
       <Link href='/solutions/ariadne-navigation'><a>{language.navi}</a></Link>
       <Link href='/solutions/ariadne-analytics'><a>{language.analytics}</a></Link>
@@ -123,7 +123,7 @@ const [language,setLanguage]=useState({})
   <div className={styles.footerLinkWrapper}>
     
   <div className={styles.footerLinkItems}>
-      <h3 className='text-2xl' ><a>{language.company}</a></h3>
+      <h3 className='text-2xl' >{language.company}</h3>
       <Link href='/company/about-us'><a>{language.about}</a></Link>
       <Link href='/why-ariadne'><a>{language.why}</a></Link>
      {/* <Link href='/resources'>Resources</Link> */}
