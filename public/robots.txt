@@ -1,0 +1,14 @@
+
+
+
+# Block all crawlers for /accounts
+User-agent: *
+Disallow: /api
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+Sitemap: https://www.ariadnemaps.com/sitemap.xml
+Sitemap: https://www.ariadnemaps.com/de/sitemap.xml
+Sitemap: https://www.ariadnemaps.com/fr/sitemap.xml
