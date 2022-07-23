@@ -4,11 +4,85 @@ import Image from 'next/image'
 // import Asset16 from '../../Resources/Photos/Asset16.png';
 import Link from 'next/link';
 // import { useTranslation } from 'react-i18next';
-
-
+import { useRouter } from "next/router";
+import { useEffect,useState } from 'react'
 
 function Footer() {
 //   const { t, i18n } = useTranslation();
+const { locale} = useRouter();
+const translations = {
+  en:{
+    "tech":"Technology",
+    "analytics":"Ariadne Analytics",
+    "navi":"Ariadne Navigation",
+    "engage":"Ariadne Engagement",
+    "data":"Data Lifecycle",
+
+    "company":"Company",
+    "about":"About Us",
+    "why":"Why Ariadne",
+    "career":"Careers",
+
+    "contact":"Contact Us",
+    "privacy":"Privacy Policy",
+    "disclaimer":"Disclaimer"
+  },
+  de:{
+    "tech":"Technologie",
+    "analytics":"Ariadne Analytics",
+    "navi":"Ariadne Navigation",
+    "engage":"Ariadne Engagement",
+    "data":"DatensLebenszyklus",
+
+    "company":"Firma",
+    "about":"Über uns",
+    "why":"Warum Ariadne",
+    "career":"Karriere",
+
+    "contact":"Konkakt",
+    "privacy":"Datenschutz",
+    "disclaimer":"Haftungsausschluss"
+  },
+  fr:{
+    "tech":"Technology",
+    "analytics":"Ariadne Analytics",
+    "navi":"Ariadne Navigation",
+    "engage":"Ariadne Engagement",
+    "data":"Data Lifecycle",
+
+    "company":"l'entreprise",
+    "about":"	Qui sommes-nous",
+    "why":"Pourquoi Ariane",
+    "career":"Carrière",
+
+    "contact":"Nous contacter",
+    "privacy":"Politique de confidentialité",
+    "disclaimer":"Clause de non-responsabilité"
+  }
+}
+
+const [language,setLanguage]=useState({})
+
+  useEffect(()=>{
+     
+    if(locale==='de') {
+      
+      setLanguage(translations.de)  
+    } 
+      else if(locale==='en'){
+         
+        setLanguage(translations.en) 
+         
+      } else {
+        
+        setLanguage(translations.fr)  
+         
+      }
+
+     
+  },[])
+
+
   return (
     
     
@@ -34,13 +108,13 @@ function Footer() {
   <div className={styles.footerLinkWrapper}>
 
     <div className={styles.footerLinkItems}>
-      <h3 className='text-2xl'>Technology</h3>
+      <h3 className='text-2xl'><a>{language.tech}</a></h3>
       {/* <Link href='/solutions/ariadne-mapping'>Ariadne Mapping</Link> */}
-      <Link href='/solutions/ariadne-navigation'>Ariadne Navigation</Link>
-      <Link href='/solutions/ariadne-analytics'>Ariadne Analytics</Link>
-      <Link href='/solutions/ariadne-engagement'>Ariadne Engagement</Link>
-      <Link href='/solutions/ariadne-analytics'>Industries</Link>
-      <Link href='/solutions/data-lifecycle'>Data Lifecycle</Link>
+      <Link href='/solutions/ariadne-navigation'><a>{language.navi}</a></Link>
+      <Link href='/solutions/ariadne-analytics'><a>{language.analytics}</a></Link>
+      <Link href='/solutions/ariadne-engagement'><a>{language.engage}</a></Link>
+      {/* <Link href='/solutions/ariadne-analytics'>Ariadne Analytics</Link> */}
+      <Link href='/solutions/data-lifecycle'><a>{language.data}</a></Link>
 
       
     </div>
@@ -49,12 +123,12 @@ function Footer() {
   <div className={styles.footerLinkWrapper}>
     
   <div className={styles.footerLinkItems}>
-      <h3 className='text-2xl' >Company</h3>
-      <Link href='/company/about-us'>About Us</Link>
-      <Link href='/why-ariadne'>Why Ariadne</Link>
+      <h3 className='text-2xl' ><a>{language.company}</a></h3>
+      <Link href='/company/about-us'><a>{language.about}</a></Link>
+      <Link href='/why-ariadne'><a>{language.why}</a></Link>
      {/* <Link href='/resources'>Resources</Link> */}
       <Link href='/blog'>Blog</Link>
-      <Link href='/company/careers'>Careers</Link>
+      <Link href='/company/careers'><a>{language.career}</a></Link>
     </div>
     </div>
   <div className={`${styles.footerLinkWrapperMobile}`}>
@@ -62,7 +136,7 @@ function Footer() {
       
     
     
-      <h3 className='text-center'>Contact Us</h3>
+      <h3 className='text-center'>{language.contact}</h3>
       <div>
       </div>
       <div className={styles.para}>
@@ -107,10 +181,10 @@ contact@ariadnemaps.com
         href='/company/privacy'
        
       >
-        <a className={`${styles.socialiconLink}`}>Privacy Policy</a>
+        <a className={`${styles.socialiconLink}`}>{language.privacy}</a>
       </Link>
       <Link 
-        href='/company/disclaimer'><a className={`${styles.socialiconLink} pr-8`}>Disclaimer</a></Link>
+        href='/company/disclaimer'><a className={`${styles.socialiconLink} pr-8`}>{language.disclaimer}</a></Link>
      
     </div>
   </div>

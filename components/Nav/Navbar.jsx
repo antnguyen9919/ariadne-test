@@ -321,21 +321,23 @@ const [language,setLanguage]=useState({})
                   <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5  ">
                     <div className='relative grid gap-6 px-5 py-6 bg-white opacity-95 sm:gap-8 sm:p-8'>
                     
-                    <Link href={asPath} locale="en"><a className='flex items-center cursor-pointer transition ease-in hover:scale-110'>
+                    {locale!=='en' && <Link href={asPath} locale="en"><a className='flex items-center cursor-pointer transition ease-in hover:scale-110'>
                     <span><CircleFlag countryCode="gb" className=' w-8 h-full 2xl:h-9 ml-7 ' /> </span>
                     <span><h1 className=' w-8 h-full 2xl:h-9 ml-7'>English</h1> </span>
                     
-                    </a></Link>
-                   <Link href={asPath} locale="de"><a className='flex items-center cursor-pointer transition ease-in hover:scale-110'>
+                    </a></Link>}
+
+                  {locale!=='de' &&  <Link href={asPath} locale="de"><a className='flex items-center cursor-pointer transition ease-in hover:scale-110'>
                     <span><CircleFlag countryCode="de" className=' w-8 h-full 2xl:h-9 ml-7 ' /> </span>
                     <span><h1 className=' w-8 h-full 2xl:h-9 ml-7'>German</h1> </span>
                     
-                    </a></Link>
-                    <Link href={asPath} locale="fr"><a className='flex items-center cursor-pointer transition ease-in hover:scale-110'>
+                    </a></Link>}
+
+                    {locale!=='fr'&& <Link href={asPath} locale="fr"><a className='flex items-center cursor-pointer transition ease-in hover:scale-110'>
                     <span><CircleFlag countryCode="fr" className=' w-8 h-full 2xl:h-9 ml-7 ' /> </span>
                     <span><h1 className=' w-8 h-full 2xl:h-9 ml-7'>French</h1> </span>
                     
-                    </a></Link>
+                    </a></Link>}
                     
                     
                     </div>
