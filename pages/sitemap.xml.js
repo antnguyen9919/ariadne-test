@@ -4,7 +4,7 @@ import { getPosts } from "../services";
 
 const Sitemap = () => {};
 
-const locales = ['en','de','fr']
+// const locales = ['en','de','fr']
 
    
   
@@ -31,92 +31,94 @@ export const getServerSideProps = async ({ res }) => {
     
     
   
-  const staticPages = fs
-    .readdirSync({
-      development: 'pages',
-      production: '.output/server/pages',
-    }[process.env.NODE_ENV])
-    .filter((staticPage) => {
-      return ![
-        "api",
-        "careers",
-        "blog",
-        "_app.js",
-        "company",
-        "industries",
-        "solutions",
-        "_document.js",
-        "_error.js",
-        "eurocis-meeting.js",
-        "letstalk.js",
-        "test.js",
+  // const staticPages = fs
+  //   .readdirSync({
+  //     development: 'pages',
+  //     production: '.output/server/pages',
+  //   }[process.env.NODE_ENV])
+  //   .filter((staticPage) => {
+  //     return ![
+  //       "api",
+  //       "careers",
+  //       "blog",
+  //       "_app.js",
+  //       "company",
+  //       "industries",
+  //       "solutions",
+  //       "_document.js",
+  //       "_error.js",
+  //       "eurocis-meeting.js",
+  //       "letstalk.js",
+  //       "test.js",
         
-        "sitemap.xml.js",
-      ].includes(staticPage);
-    })
-    .map((staticPagePath) => {
-      if(staticPagePath==='industries'){
+  //       "sitemap.xml.js",
+  //     ].includes(staticPage);
+  //   })
+  //   .map((staticPagePath) => {
+  //     if(staticPagePath==='industries'){
         
-      }
-      return `${baseUrl}/${staticPagePath}`;
-    });
+  //     }
+  //     return `${baseUrl}/${staticPagePath}`;
+  //   });
      
 
-    const industries = fs
-    .readdirSync({
-      development: 'pages/industries',
-      production: '.output/server/pages/industries',
-    }[process.env.NODE_ENV])
-    .filter((staticPage) => {
-      return ![
-        "index.js",
+  //   const industries = fs
+  //   .readdirSync({
+  //     development: 'pages/industries',
+  //     production: '.output/server/pages/industries',
+  //   }[process.env.NODE_ENV])
+  //   .filter((staticPage) => {
+  //     return ![
+  //       "index.js",
         
-      ].includes(staticPage);
-    })
-    .map((staticPagePath) => {
+  //     ].includes(staticPage);
+  //   })
+  //   .map((staticPagePath) => {
       
-        return `${baseUrl}/industries/${staticPagePath}`;
+  //       return `${baseUrl}/industries/${staticPagePath}`;
        
      
-    });
+  //   });
 
-    const solutions = fs
-    .readdirSync({
-      development: 'pages/solutions',
-      production: '.output/server/pages/solutions',
-    }[process.env.NODE_ENV])
-    .filter((staticPage) => {
-      return ![
-        "index.js",
+  //   const solutions = fs
+  //   .readdirSync({
+  //     development: 'pages/solutions',
+  //     production: '.output/server/pages/solutions',
+  //   }[process.env.NODE_ENV])
+  //   .filter((staticPage) => {
+  //     return ![
+  //       "index.js",
         
-      ].includes(staticPage);
-    })
-    .map((staticPagePath) => {
+  //     ].includes(staticPage);
+  //   })
+  //   .map((staticPagePath) => {
       
-        return `${baseUrl}/solutions/${staticPagePath}`;
+  //       return `${baseUrl}/solutions/${staticPagePath}`;
        
      
-    });
+  //   });
     
-    const company =fs
-    .readdirSync({
-      development: 'pages/company',
-      production: '.output/server/pages/company',
-    }[process.env.NODE_ENV])
-    .filter((staticPage) => {
-      return ![
-        "index.js",
+  //   const company =fs
+  //   .readdirSync({
+  //     development: 'pages/company',
+  //     production: '.output/server/pages/company',
+  //   }[process.env.NODE_ENV])
+  //   .filter((staticPage) => {
+  //     return ![
+  //       "index.js",
         
-      ].includes(staticPage);
-    })
-    .map((staticPagePath) => {
+  //     ].includes(staticPage);
+  //   })
+  //   .map((staticPagePath) => {
       
-        return `${baseUrl}/company/${staticPagePath}`;
+  //       return `${baseUrl}/company/${staticPagePath}`;
        
      
-    });
+  //   });
     
-    const allPages = [...staticPages,...solutions,...industries, ...company, ...dynamic, `${baseUrl}/blog/index.js`,`${baseUrl}/company/index.js`]
+    const allPages = [ 
+      // ...staticPages,...solutions,...industries, ...company, 
+      ...dynamic, `${baseUrl}/blog/index.js`,`${baseUrl}/company/index.js`]
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
