@@ -87,7 +87,7 @@ const VideoCarousel = () => {
            {images.map((image) => (
             <div key = {image.id}>
             <div className='cursor-pointer' onClick={()=>handleClick(image)}>
-            <Image layout='responsive'   src = {image.url} key={image.id} />
+            <Image layout='responsive' alt={`img ${image.url}`}  src = {image.url} key={image.id} />
             </div>
 
             
