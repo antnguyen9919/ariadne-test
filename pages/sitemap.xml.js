@@ -22,7 +22,7 @@ export const getServerSideProps = async ({ res }) => {
         const dynamic = posts
         .map(({node:{slug}}) => {
             
-            return `${baseUrl}/post/${slug}`
+            return `${baseUrl}/blog/post/${slug}`
         })
          
       
