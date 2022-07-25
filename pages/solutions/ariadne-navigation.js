@@ -128,7 +128,7 @@ We enable and lead you to hyperlocal marketing.
                <div>
                <h1>Why Ariadne?</h1>
                </div>
-                <div className='w-full  grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1  content-center items-center justify-around text-xl 2xl:text-3xl px-6 gap-3 wrap xl:justify-items-center '>
+                <div className=' w-full text-center xl:text-left grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1  content-center items-center justify-around text-xl 2xl:text-3xl xl:px-6 gap-3 wrap xl:justify-items-center '>
                   <div className='xl:w-1/3 2xl:w-2/3'><h4>Browser-Based<br/>(No-app)<br/>Navigation</h4></div>
                   <div className='xl:w-1/3 2xl:w-1/4'><h4>Award<br/>Winning<br/>Accuracy</h4></div>
                   <div className='xl:w-1/3 2xl:w-1/4'><h4>No<br/>Infrastructure<br/>Needed</h4></div>
@@ -140,91 +140,6 @@ We enable and lead you to hyperlocal marketing.
             </div>
 
 
-            {/* <div className={`${styles.useCasesWithTitle} bg-gradient-to-b from-[#ffffff] via-[#ffffff] to-[#f9f9f9]`}>
-        <div>
-        <h1 className='text-center'>Discover use cases</h1>
-
-        </div>
-        <div className={styles.useCases}>
-          <div className={styles.caseContainer}>
-
-          <div className = {styles.caseBox} >
-          <div className = {styles.caseBox1}>
-          <Link href="/industries/retail-stores">
-
-
-               <h4 className='my-3 pt-20 pr-4'>Retail</h4>
-          </Link>
-          </div>
-          </div>
-          </div>
-
-          <div className={styles.caseContainer}>
-          <div className = {styles.caseBox}>
-          <div className = {styles.caseBox2}>
-          <Link href="/industries/shopping-centers">
-
-
-               <h4 className='my-3 pt-20 pr-4'>Malls</h4>
-          </Link>
-          </div>
-          </div>
-          </div>
-
-          <div className={styles.caseContainer}>
-          <div className = {styles.caseBox}>
-          <div className = {styles.caseBox3}>
-          <Link href="/industries/airports">
-
-
-               <h4 className='my-3 pt-20 pr-4'>Airports</h4>
-          </Link>
-          </div>
-          </div>
-
-          </div>
-
-          <div className={styles.caseContainer}>
-          <div className = {styles.caseBox}>
-          <div className = {styles.caseBox4}>
-          <Link href="/industries/transportation">
-
-
-               <h4 className='my-3 pt-20 pr-4'>Trasportation</h4>
-          </Link>
-          </div>
-          </div>
-
-          </div>
-
-          <div className={styles.caseContainer}>
-          <div className = {styles.caseBox}>
-          <div className = {styles.caseBox5}>
-          <Link href="/industries/cities">
-
-
-               <h4 className='my-3 pt-20 pr-4'>Cities</h4>
-          </Link>
-          </div>
-          </div>
-
-          </div>
-
-
-          <div className={styles.caseContainer}>
-          <div className = {styles.caseBox}>
-          <div className = {styles.caseBox6}>
-          <Link href="/industries/hospitality">
-
-
-
-               <h4 className='my-3 pt-20 pr-4'>Hospitality</h4>
-          </Link>
-          </div>
-          </div>
-          </div>
-          </div>
-        </div> */}
 
        
 

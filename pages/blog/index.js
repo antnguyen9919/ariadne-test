@@ -25,7 +25,7 @@ return (
   <div  className={BlogStyle.whole}>
     <BlogHeader/>
   <div className={BlogStyle.blogBody}>
-        <div className='container mx-auto px-10 mb-8'>
+        <div className='container mx-auto xl:px-10 px-1 mb-8'>
         <Head>
         <title>Ariadne Maps Blog</title>
         <meta name="description" content="Get your latest news and updates" />

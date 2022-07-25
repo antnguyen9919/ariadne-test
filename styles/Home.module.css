@@ -623,7 +623,8 @@
     }
     
     .section2{
-        padding: 3em 1em 3em 1em;
+       
+        padding: 2em 0.7em 3em 0.7em;
     }
     .section2 h1{
         padding-bottom: 5vh;
@@ -757,7 +758,7 @@
         flex-direction: column;
     }
     .section7 >iframe{
-        height: 120vh;
+        height: 150vh;
     }
     
     .section7 h1{

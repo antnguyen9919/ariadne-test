@@ -356,16 +356,44 @@ export default function Home(props) {
       >
         
         <div className='overscroll-contain' /*style={{backgroundColor:"#f5f5f5"}}*/>
-        
-        <div className='flex flex-row justify-end overscroll-contain'>
-        <button className='hover:bg-red-600 bg-red-500 px-3 text-white font-semibold' style={{background:"black"}} onClick={closeModal}>X</button>
+        <div className='flex  flex-row justify-end overscroll-contain'>
+        <button className='rounded-md hover:bg-red-600 bg-red-500 px-3 text-white font-semibold' style={{background:"black"}} onClick={closeModal}>X</button>
         </div>
+        <div className='lg:hidden xl:hidden 2xl:hidden'>
+            
+            <div className='w-full h-full my-5 ' >
+            <Image layout='responsive'
+            
+            src={eAnalytics} alt = 'eanalytics' />
+            <h1 className='text-3xl text-center' style={{marginTop:"20px"}}>{t('section1_pic1title')}</h1>
+            <p>{t('section1_pic1subtitle')}</p>
+            </div>
+            <div className='w-full h-full my-5 ' >
+            <Image layout='responsive'
+            
+            src={eCRM} alt ='ecrm' />
+            <h1 className='text-3xl text-center' style={{marginTop:"20px"}}>{t('section1_pic2title')}</h1>
+            <p>{t('section1_pic2subtitle')}</p>
+            </div>
+            <div className='w-full h-full my-5 ' >
+            <Image layout='responsive'
+            
+            src={ERP} alt ='erp'  />
+            <h1 className='text-3xl text-center' style={{marginTop:"20px"}}>{t("section1_pic3title")}</h1>
+            <p>{t('section1_pic3subtitle')}</p>
+            </div>
+
+            
+
+            </div>
+        
         
         
         
           
-            <div className='flex flex-row justify-center items-center'>
-            <div className=' w-2/3  items-center justify-center'>
+            <div className='lg:flex xl:flex 2xl:flex hidden  flex-row justify-center items-center'>
+            
+            <div className=' w-2/3   items-center justify-center'>
           <h1 className = "text-center text-4xl" style={{marginBottom:"20px"}}>{t('section1_picsheader')}</h1>
       <Carousel infinite 
       
@@ -403,6 +431,7 @@ export default function Home(props) {
           
       </Carousel>
     </div>
+            
             </div>
 
         

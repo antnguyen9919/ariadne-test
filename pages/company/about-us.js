@@ -86,7 +86,7 @@ const AboutUs = () => {
    
    </p>
                </div>
-               <div className={`${styles.aboutUs} xl:px-10 mt-8 px-4 py-8` }>
+               <div className={`${styles.aboutUs} xl:px-10 mt-8 px-1 py-8` }>
    
                  <h3 className='text-center xl:text-left mb-8' >European Union</h3>
                  <div className="flex mb-8 xl:flex-row md:flex-row flex-col  items-center" >
@@ -109,7 +109,7 @@ const AboutUs = () => {
    
                <div className={styles.row}>
                    <div className={styles.columnA}>
-                   <Image src={Georgios} alt=''/>
+                   <Image src={Georgios} alt='ceo' width="250" height="250"/>
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>Dr. Georgios Pipelidis</h2>
                      <p className='text-center'>CEO and Co-Founder
    
@@ -118,7 +118,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Nikos} alt=''/>
+                   <Image src={Nikos} alt='' width="250" height="250"/>
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>Dipl.-Ing. Nikos Tsiamitros
    
    
@@ -133,7 +133,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Nam} alt=''/>
+                   <Image src={Nam} alt='' width="250" height="250"/>
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>Nam Le Duc
    
    
@@ -149,7 +149,7 @@ const AboutUs = () => {
                </div>
                <div className={styles.row}>
                    <div className={styles.columnA}>
-                   <Image src={Mustafa} alt=''/>
+                   <Image src={Mustafa} alt='' width="250" height="250"/>
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>Mustafa Parlak
    
    
@@ -165,7 +165,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={HasimKoc} alt=''/>
+                   <Image src={HasimKoc} alt='' width="250" height="250"/>
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>Hasim Koc
    
    
@@ -185,7 +185,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Victoria} alt=''/>
+                   <Image src={Victoria} alt='' width="250" height="250"/>
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>Victoria Tsiamitrou
    
    
@@ -210,7 +210,7 @@ const AboutUs = () => {
    
                <div className={styles.row}>
                    <div className={styles.columnA}>
-                   <Image src={PatiF} alt=''/>
+                   <Image src={PatiF} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                        Pati Flannery
@@ -219,7 +219,7 @@ const AboutUs = () => {
                          </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Francesco} alt=''/>
+                   <Image src={Francesco} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                        Francesco Vasta
@@ -229,7 +229,7 @@ const AboutUs = () => {
                        </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Wasiq} alt=''/>
+                   <Image src={Wasiq} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                        Wasiq Rumaney
@@ -244,7 +244,7 @@ const AboutUs = () => {
                    
                    <div className={styles.row}>
                    <div className={styles.columnA}>
-                   <Image src={Najeeb} alt=''/>
+                   <Image src={Najeeb} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Najeeb Khan                      </h2>
@@ -254,7 +254,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={KostasT} alt=''/>
+                   <Image src={KostasT} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Kostas Theocharoulis
@@ -266,7 +266,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Athanasions} alt=''/>
+                   <Image src={Athanasions} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Athanasios Brianis
@@ -281,7 +281,7 @@ const AboutUs = () => {
                    </div>
                    <div className={styles.row}>
                    <div className={styles.columnA}>
-                   <Image src={KostasZ} alt=''/>
+                   <Image src={KostasZ} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Kostas Ziampakas
@@ -293,7 +293,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={KostasK} alt=''/>
+                   <Image src={KostasK} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Kostas Kitsikidis
@@ -304,7 +304,7 @@ const AboutUs = () => {
                        </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Shahab} alt=''/>
+                   <Image src={Shahab} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Md Shahabuddin
@@ -319,7 +319,7 @@ const AboutUs = () => {
                    </div>
                    <div className={styles.row}>
                    <div className={styles.columnA}>
-                   <Image src={Precious} alt=''/>
+                   <Image src={Precious} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Precious Adipere
@@ -331,7 +331,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Mahade} alt=''/>
+                   <Image src={Mahade} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Mahade Sarkar
@@ -343,7 +343,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Karolina} alt=''/>
+                   <Image src={Karolina} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Karolina Piekarz
@@ -358,7 +358,7 @@ const AboutUs = () => {
                    </div>
                    <div className={styles.row}>
                    <div className={styles.columnA}>
-                   <Image src={Elli} alt=''/>
+                   <Image src={Elli} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Elli Dimopoulou
@@ -372,7 +372,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Roman} alt=''/>
+                   <Image src={Roman} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Roman Kees
@@ -386,7 +386,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Aykut} alt=''/>
+                   <Image src={Aykut} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Aykut Ongel
@@ -402,7 +402,7 @@ const AboutUs = () => {
 
                    <div className={styles.row}>
                    <div className={styles.columnA}>
-                   <Image src={Max} alt=''/>
+                   <Image src={Max} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Max Dorfmeister
@@ -416,7 +416,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Sebastian} alt=''/>
+                   <Image src={Sebastian} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Sebastian Deppe
@@ -430,7 +430,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Ted} alt=''/>
+                   <Image src={Ted} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Ted Polykandriotis
@@ -446,7 +446,7 @@ const AboutUs = () => {
 
                    <div className={styles.row}>
                    <div className={styles.columnA}>
-                   <Image src={Sean} alt=''/>
+                   <Image src={Sean} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Sean-Ethan Sahai
@@ -460,7 +460,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Indraditya} alt=''/>
+                   <Image src={Indraditya} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Indraditya Bhattacharyya
@@ -474,7 +474,7 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Charlene} alt=''/>
+                   <Image src={Charlene} alt='' width="250" height="250"/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Charlene Su

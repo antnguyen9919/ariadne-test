@@ -112,7 +112,7 @@ Engagement</motion.h1>
           </div>
 
           <div className={`${styles.navB} mb-8 bg-black text-white content-center justify-center flex items-center`}>
-              <div className='text-justify w-3/4' >
+              <div className='text-justify xl:w-3/4' >
               <h1 className='text-center mb-6'>Here is an example</h1>
               <p>A customer walks into the store and spends the most time in the shirts section. In the end, she walks away without buying an item. About the exit, she receives a text saying &#8220;Get a 20% discount on shirts with the code DISC20, today only!&#8221; and walks back in to make a discounted purchase, which benefits both the customer and the business.</p>
               </div>
@@ -134,7 +134,7 @@ Engagement</motion.h1>
              </div> 
 
              <div className={`${styles.navB} my-8 bg-black text-white content-center justify-center flex items-center`}>
-              <div className='text-justify w-3/4' >
+              <div className='text-justify xl:w-3/4' >
               <h1 className='text-center mb-6'>Privacy First!</h1>
               <p>Our experience shows that most customers are happy to opt-in and share information to benefit from the promotions and the additional services. At Ariadne Maps, we put the privacy of customers first and establish a reliable relationship between the customers and the businesses.</p>
               </div>
@@ -146,7 +146,7 @@ Engagement</motion.h1>
           <div className={styles.productsIn}>
 
           <div className = {styles.product}>
-          <div className={`${styles.productImg} ${styles.productImg}`}>
+          <div className={`${styles.productImg} `}>
           <Image src={scan} alt=""/>
 
             </div>
@@ -156,7 +156,7 @@ Engagement</motion.h1>
           </div>
 
           <div className = {styles.product}>
-            <div className={`${styles.productImg} ${styles.productImg}`}>
+            <div className={`${styles.productImg} `}>
             <Image src={somescreen} alt=""/>
 
             </div>
@@ -165,7 +165,7 @@ Engagement</motion.h1>
           </div>
 
           <div className = {styles.product}>
-          <div className={`${styles.productImg} ${styles.productImg}`}>
+          <div className={`${styles.productImg} `}>
           <Image src={phone2} alt=""/>
 
             </div>
