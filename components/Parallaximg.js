@@ -15,7 +15,7 @@ const Parallaximg = (props) => {
     <ParallaxBanner 
     layers={[{image:props.imgsrc ,speed: -30, amount:0.6 }]}
     style={{height:props.height }}
-    expanded
+    expanded="true"
     >
             <div  style={contentStyle} >
                 {props.children}

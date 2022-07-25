@@ -2,10 +2,11 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from '../styles/Industries.module.css'
 import * as EmailValidator from 'email-validator';
+import {db} from '../firebase-config'
+import { addDoc, collection } from "firebase/firestore";
  
+const dbRef = collection(db, "messages");
  
-
-// npm i @emailjs/browser
 
 const ContactForm = () => { 
   const form = useRef();
@@ -21,7 +22,7 @@ const ContactForm = () => {
 
   }  
   const Success =()=>{
-    return(<div className="border rounded-md h-2/4 transition-all">
+    return(<div className="  h-2/4 transition-all">
       <h2>Thank you for your message. Our team will contact you shortly</h2>
     </div>)
   }
@@ -30,7 +31,7 @@ const ContactForm = () => {
     setLoading(true);
     
   
-    console.log('form ', form.current)
+    // console.log('form ', form.current)
     if (EmailValidator.validate(formData.user_email)) setEmailValid(" ")
     else setEmailValid("Invalid email")  // true
 
@@ -43,16 +44,24 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          console.log(result?.text);
-          console.log("message sent");
+          // console.log(result?.text);
+          console.log("message sent to email");
           setSend(true)
-          setLoading(false)
+         
           
         },
         (error) => {
           console.log(error.text);
         }
       );
+
+    addDoc(dbRef,formData).then((docRef)=>{
+      console.log("Firestore document has been added successfully")
+    }).catch(efb=>{
+      console.log(efb.message)
+    })  
+
+    setLoading(false)
   };
 
   return (
@@ -66,12 +75,14 @@ const ContactForm = () => {
         <input id="form_email" required type="email" name="user_email" value={formData.user_email} onChange={onChangeForm}/>
         {!isEmailValid && <div>{isEmailValid}</div>}
         <label htmlFor="form_mes" className="cursor-pointer">Message</label>
-        <textarea required id="form_mes" name="message" value={formData.message} onChange={onChangeForm}/>
-        {/* <input disabled  type="submit" value="Send"/> */}
+        <textarea
+         
+         required id="form_mes" name="message" value={formData.message} onChange={onChangeForm}/>
+        
         <button disabled={loading} type="submit">{loading?"Sending...":"Send"}</button>
         
       </form>
-      {/* {isSent && <div style={{color:'greed'}}>We have received your message. Our team will contact you shortly.</div>} */}
+       
       <script>
         
     </script>
