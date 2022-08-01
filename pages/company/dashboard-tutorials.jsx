@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import cs from "../../styles/Tutorials.module.css";
-import { links } from "./tutorial-links";
+import { links } from "../../sections/tutorial-links";
 import { useState } from "react";
 const DashboardTutorial = () => {
   const [video, setVideo] = useState(0);
