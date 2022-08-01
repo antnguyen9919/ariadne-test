@@ -24,7 +24,7 @@ const DashboardTutorial = () => {
         </div>
         <div className={cs.bar}>
           <div className='drop-shadow-md'>
-            <h1 className='text-center mb-2'>DashboardTutorial</h1>
+            <h1 className='text-center mb-2'>Dashboard Tutorial</h1>
           </div>
 
           {links.map((link) => (
