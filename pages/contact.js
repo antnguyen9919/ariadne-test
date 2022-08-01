@@ -1,13 +1,18 @@
 import React from "react";
-import Head from "next/head";
 
-import styles from "../../styles/Industries.module.css";
+import styles from "../styles/Contact.module.css";
 
 import ContactForm from "../components/ContactForm";
+import Link from "next/link";
 
 const contact = () => {
   return (
-    <>
+    <div className={styles.cont}>
+      <div className='flex items-center justify-center'>
+        <Link href='/dashboard-tutorials'>
+          <a className='text-2xl text-blue-600 hover:underline'>Tutorials</a>
+        </Link>
+      </div>
       <div className={styles.contactRow}>
         <div className={styles.contactColumn}>
           <h3 className='mb-6'>Contact Us</h3>
@@ -25,7 +30,7 @@ const contact = () => {
           <ContactForm />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

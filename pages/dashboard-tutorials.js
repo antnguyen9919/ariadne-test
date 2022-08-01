@@ -2,6 +2,7 @@ import React from "react";
 import ReactPlayer from "react-player";
 import cs from "../styles/Tutorials.module.css";
 import { links } from "../sections/tutorial-links";
+import Link from "next/link";
 import { useState } from "react";
 const Tutorials = () => {
   const [video, setVideo] = useState(0);
@@ -11,6 +12,11 @@ const Tutorials = () => {
   };
   return (
     <div className={cs.container}>
+      <div className='flex items-center justify-center'>
+        <Link href='/contact'>
+          <a className='text-2xl  text-blue-600 hover:underline'>Contact</a>
+        </Link>
+      </div>
       <div className={cs.flexbox}>
         <div className={cs.vidcell}>
           <ReactPlayer
@@ -22,6 +28,7 @@ const Tutorials = () => {
             stopOnUnmount={true}
           />
         </div>
+
         <div className={cs.bar}>
           <div className='drop-shadow-md'>
             <h1 className='text-center mb-2'>Dashboard Tutorial</h1>
