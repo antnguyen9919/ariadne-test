@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 import cs from "../../styles/Tutorials.module.css";
 import { links } from "../../sections/tutorial-links";
 import { useState } from "react";
-const DashboardTutorial = () => {
+const tutorials = () => {
   const [video, setVideo] = useState(0);
 
   const videoHandler = (e) => {
@@ -50,4 +50,4 @@ const DashboardTutorial = () => {
   );
 };
 
-export default DashboardTutorial;
+export default tutorials;
