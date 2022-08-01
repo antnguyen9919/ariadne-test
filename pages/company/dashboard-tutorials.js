@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 import cs from "../../styles/Tutorials.module.css";
 import { links } from "../../sections/tutorial-links";
 import { useState } from "react";
-const tutorials = () => {
+const Tutorials = () => {
   const [video, setVideo] = useState(0);
 
   const videoHandler = (e) => {
@@ -26,9 +26,8 @@ const tutorials = () => {
           <div className='drop-shadow-md'>
             <h1 className='text-center mb-2'>Dashboard Tutorial</h1>
           </div>
-
-          {links.map((link) => (
-            <ol type='1'>
+          <ol type='1'>
+            {links.map((link) => (
               <li
                 className={
                   video == link.id
@@ -42,12 +41,12 @@ const tutorials = () => {
                   <p id={link.id}> {link.title}</p>
                 </button>
               </li>
-            </ol>
-          ))}
+            ))}
+          </ol>
         </div>
       </div>
     </div>
   );
 };
 
-export default tutorials;
+export default Tutorials;
