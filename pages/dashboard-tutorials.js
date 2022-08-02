@@ -11,6 +11,7 @@ const Tutorials = () => {
 
   const videoHandler = (e) => {
     setVideo(e.target.id);
+    setCollapse(true);
   };
   return (
     <div className={cs.container}>
@@ -26,19 +27,21 @@ const Tutorials = () => {
             stopOnUnmount={true}
           />
         </div>
-        <button
-          className='absolute left-2/4 bottom-0'
-          onClick={() => {
-            setCollapse(false);
-          }}
-        >
-          <img
-            className='hover:scale-110 bg-black rounded-full opacity-75 '
-            src='https://media0.giphy.com/media/h0uQb9D6xz1U6QAGyP/giphy.gif?cid=6c09b9524agwpwgl8rkskwl5zdywwo49f86pzl753ap0uyuo&rid=giphy.gif&ct=s'
-            height={40}
-            width='40px'
-          />
-        </button>
+        {collapse && (
+          <button
+            className='absolute left-2/4 bottom-0'
+            onClick={() => {
+              setCollapse(false);
+            }}
+          >
+            <img
+              className='hover:scale-110 bg-black rounded-full opacity-75 '
+              src='https://media0.giphy.com/media/h0uQb9D6xz1U6QAGyP/giphy.gif?cid=6c09b9524agwpwgl8rkskwl5zdywwo49f86pzl753ap0uyuo&rid=giphy.gif&ct=s'
+              height={40}
+              width='40px'
+            />
+          </button>
+        )}
         <div className={collapse ? cs.bar_close : cs.bar_open}>
           <div className='flex justify-center '>
             <button
@@ -54,7 +57,7 @@ const Tutorials = () => {
               />
             </button>
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-2  gap-2 md:justify-items-start md:px-8'>
+          <div className='grid grid-cols-1 md:grid-cols-2 mt-6  gap-2 md:justify-items-start md:px-8'>
             {links.map((link) => (
               <button
                 id={link.id}
@@ -70,12 +73,19 @@ const Tutorials = () => {
               </button>
             ))}
 
-            <div className='flex items-center justify-center'>
+            <div className=' flex items-center justify-center mt-1'>
               <Link href='/contact'>
                 <a className='text-2xl  text-blue-500 hover:underline'>
                   Contact
                 </a>
               </Link>
+              <div className='mx-10 hidden md:block'>
+                <Link href='/shortcuts'>
+                  <a className='text-2xl  text-blue-500 hover:underline'>
+                    Keyboard shortcuts
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

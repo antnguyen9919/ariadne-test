@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  background: #fff;
+  /* background: #fff; */
 }
 
 .videos_list {
@@ -22,7 +22,8 @@
   left: 0;
   bottom: 0;
   padding-top: 10px;
-  height: 50vh;
+  height: 60vh;
+  font-size: 1.3rem;
   /* padding-left: 10px; */
   width: 100%;
 }
@@ -47,13 +48,12 @@
 
 @media screen and (max-width: 768px) {
   .bar_open {
-    background: #fff;
     z-index: 100;
     position: absolute;
     left: 0;
     bottom: 0;
-    padding-top: 20px;
-    height: 70vh;
+    padding-top: 10px;
+    height: 100vh;
     /* padding-left: 10px; */
     width: 100%;
   }

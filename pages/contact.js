@@ -12,6 +12,13 @@ const contact = () => {
         <Link href='/dashboard-tutorials'>
           <a className='text-2xl text-blue-600 hover:underline'>Tutorials</a>
         </Link>
+        <div className='mx-10'>
+          <Link href='/shortcuts'>
+            <a className='text-2xl  text-blue-600 hover:underline'>
+              Keyboard shortcuts
+            </a>
+          </Link>
+        </div>
       </div>
       <div className={styles.contactRow}>
         <div className={styles.contactColumn}>
