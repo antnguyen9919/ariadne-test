@@ -21,9 +21,8 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   height: 60vh;
-  font-size: 1.3rem;
   /* padding-left: 10px; */
   width: 100%;
 }
