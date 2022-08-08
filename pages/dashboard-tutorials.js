@@ -33,7 +33,7 @@ const Tutorials = () => {
         </div>
         {collapse && (
           <button
-            className='absolute left-2/4 bottom-0 hover:scale-110 opacity-90 hover:opacity-100'
+            className='absolute left-2/4 bottom-0  opacity-90 hover:opacity-100'
             onClick={() => {
               setPlaying(false);
               setCollapse(false);
